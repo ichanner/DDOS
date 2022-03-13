@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "http": "^0.0.1-security",
+    "net-socket": "^1.1.0",
+    "random-bytes": "^1.0.0"
+  }
+}
