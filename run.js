@@ -17,9 +17,10 @@ function makeTread(i){
 }
 
 for(var i = 0; i < threads; i++){
-
-
-	workers.splice(i, 0, new Worker("./worker.js"));
+	
+	let worker = new Worker("./worker.js");
+	
+	workers.splice(i, 0, worker);
 
 	workers[i].on("error", ()=>{
 
