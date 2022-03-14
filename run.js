@@ -21,11 +21,6 @@ for(var i = 0; i < threads; i++){
 
 	workers.splice(i, 0, new Worker("./worker.js"));
 
-	workers[i].on("message", (message)=>{
-
-		console.log(message);
-	})
-
 	workers[i].on("error", ()=>{
 
 	   workers[i] = makeTread(i);	  
